@@ -1,0 +1,34 @@
+% 编译方式: xelatex*2
+\documentclass{ctexbook}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{syntonly}
+\usepackage{IEEEtrantools}
+%\syntaxonly
+\pagestyle{plain}
+\makeatletter
+\newcommand{\starttoc}{
+    \chapter*{\contentsname}
+    \@starttoc{toc}
+}
+\makeatother
+%\renewcommand{\tableofcontents}{\twocolumn\starttoc\onecolumn}
+\hypersetup{
+	colorlinks,
+	linkcolor=blue,
+	filecolor=pink,
+	urlcolor=cyan,
+	citecolor=red,
+}
+\def\b{\boldsymbol}
+\def\d{\mathrm{d}}
+\title{射电天文学笔记}
+\author{GasinAn}
+\begin{document}
+    \maketitle
+    \include{copyright.tex}
+    \tableofcontents
+    \include{第一章.射电信号的探测方法.tex}
+\end{document}
