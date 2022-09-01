@@ -1,0 +1,208 @@
+\documentclass[12pt]{ctexart}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{marginnote}
+\usepackage{mathrsfs}
+\usepackage{syntonly}
+\usepackage{textcomp}
+\usepackage{ulem}
+\usepackage{verbatim}
+%\syntaxonly
+%\geometry{a5paper}
+\hyphenation{}
+\normalem
+\hypersetup{
+    colorlinks,
+    linkcolor=blue,
+    filecolor=pink,
+    urlcolor=cyan,
+    citecolor=red,
+}
+\def\b{\boldsymbol}
+\def\d{\mathrm{d}}
+\def\p{\partial}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\atanxy}{atan2}
+\title{}
+\author{}
+\begin{document}
+
+\begin{equation*}
+    I(\nu)=\frac{2kT\nu^2}{c^2},
+\end{equation*}
+\begin{equation*}
+    L(\nu)=4\pi R^2\times\int_{-\pi}^{\pi}\int_{0}^{\frac{\pi}{2}}\cos\theta\sin\theta\,\d\theta\,\d\phi\times I(\nu)=4\pi R^2\times\pi\times I(\nu),
+\end{equation*}
+\begin{equation*}
+    F(\nu)=\frac{L(\nu)}{4\pi r^2}\approx60\mu\text{Jy}.
+\end{equation*}
+
+\begin{equation*}
+    R_\odot\approx6.957\times10^8 \text{m},
+\end{equation*}
+\begin{equation*}
+    L_\odot=4\pi R_\odot^2\sigma T_\odot^4\approx3.9\times10^{26}\text{W}.
+\end{equation*}
+\begin{equation*}
+    L_\text{入}=L_\odot\frac{\pi R_\text{M}^2}{4\pi r_{\odot\text{M}}^2},
+\end{equation*}
+\begin{equation*}
+    L_\text{出}=4\pi R_\text{M}^2\sigma T_\text{M}^4,
+\end{equation*}
+\begin{equation*}
+    T_\text{M}=\sqrt[4]{\frac{L_\odot}{16\pi\sigma r_{\odot\text{M}}^2}}=\sqrt[4]{\frac{R_\odot^2}{4r_{\odot\text{M}}^2}}T_\odot\approx230\text{K}.
+\end{equation*}
+\begin{equation*}
+    R_\text{M}=r_\text{EM}\theta_\text{M},
+\end{equation*}
+\begin{equation*}
+    I_\text{M}(\nu)=\frac{2kT_\text{M}\nu^2}{c^2},
+\end{equation*}
+\begin{equation*}
+    L_\text{M}(\nu)=4\pi R_\text{M}^2\times\int_{-\pi}^{\pi}\int_{0}^{\frac{\pi}{2}}\cos\theta\sin\theta\,\d\theta\,\d\phi\times I_\text{M}(\nu)=4\pi R_\text{M}^2\times\pi\times I_\text{M}(\nu),
+\end{equation*}
+\begin{equation*}
+    F_\text{M}(\nu)=\frac{L_\text{M}(\nu)}{4\pi r_\text{EM}^2}=4\theta_\text{M}^2I_\text{M}(\nu)\approx4.8\times10^{-25}\text{W}/(\text{m}^2\cdot\text{Hz}).
+\end{equation*}
+\begin{equation*}
+    T_\text{M}=\sqrt[4]{\frac{(1-\alpha)L_\odot}{16\pi\sigma r_{\odot\text{M}}^2}}=\sqrt[4]{\frac{(1-\alpha)R_\odot^2}{4r_{\odot\text{M}}^2}}T_\odot\approx220\text{K}.
+\end{equation*}
+\begin{equation*}
+    F_\text{M}(\nu)=\frac{L_\text{M}(\nu)}{4\pi r_\text{EM}^2}=4\theta_\text{M}^2I_\text{M}(\nu)\approx4.7\times10^{-25}\text{W}/(\text{m}^2\cdot\text{Hz}).
+\end{equation*}
+
+\begin{equation*}
+    P=\frac{2}{3}\frac{q^2\ddot{x}^2}{c^3}
+    =\frac{2}{3}\frac{q^2A^2\omega^4\cos^2(\omega t)}{c^3},
+\end{equation*}
+\begin{equation*}
+    \bar{P}=\frac{2q^2A^2\omega^4}{3c^3}\frac{\int_{\omega t=-2\pi}^{\omega t=2\pi}\cos^2(\omega t)\,\d t}{\int_{\omega t=-2\pi}^{\omega t=2\pi}\d t}
+    =\frac{2q^2A^2\omega^4}{3c^3}\frac{\int_{-2\pi}^{2\pi}\cos^2\theta\,\d \theta}{\int_{-2\pi}^{2\pi}\d \theta}
+    =\frac{q^2A^2\omega^4}{3c^3}.
+\end{equation*}
+
+\begin{equation*}
+    E_{\bot }=\Re \left[\frac{-i\pi \sin\theta}{c}\frac{I_0l}{\lambda}\frac{e^{-i\omega t}}{r}\right],
+\end{equation*}
+\begin{equation*}
+    S=\frac{c}{4\pi}E_{\bot }^2\propto\frac{\sin^2\theta}{r^2},
+\end{equation*}
+\begin{equation*}
+    P(\Omega)\d\Omega=Sr^2\d\Omega\propto\sin^2\theta\d\Omega,
+\end{equation*}
+\begin{equation*}
+    \iint\sin^2\theta\sin\theta\,\d\theta\,\d\phi
+    =\int\frac{4}{3}\,\d\phi=\frac{8\pi}{3},
+\end{equation*}
+\begin{equation*}
+    G(\theta,\phi)=\frac{3}{8\pi}\sin^2\theta.
+\end{equation*}
+
+\begin{equation*}
+    A_\text{e}(\theta,\phi)
+    =\frac{\lambda^2}{4\pi}G(\theta,\phi)
+    =\frac{3\lambda^2}{32\pi^2}\sin^2\theta
+    =\frac{3c^2}{32\pi^2\nu^2}\sin^2\theta,
+\end{equation*}
+\begin{equation*}
+    P(\nu)=A_\text{e}\frac{S}{2}\approx5.1\times10^{-26}\text{W}/\text{Hz}.
+\end{equation*}
+
+\begin{equation*}
+    T_\text{A}=\frac{P(\nu)}{k}\approx3.7\times10^{-3}\text{K}.
+\end{equation*}
+
+\begin{equation*}
+    R_\text{ff}\approx\frac{2D^2}{\lambda}\approx2\times10^{6}\text{m}.
+\end{equation*}
+
+\begin{equation*}
+    f(l)
+    =g\int_{-\frac{D}{2\lambda}}^{\frac{D}{2\lambda}}
+    e^{-i2\pi lu}\d u
+    =g\left[\frac{e^{-i2\pi lu}}{-i2\pi l}\right]_{-\frac{D}{2\lambda}}^{\frac{D}{2\lambda}}
+    =g\frac{\sin(\pi l\frac{D}{\lambda})}{\pi l}.
+\end{equation*}
+
+\begin{equation*}
+    \lambda_\text{D}\approx\sqrt{\frac{kT}{4\pi n_e e^2}},
+\end{equation*}
+\begin{equation*}
+    b_\text{max}\approx\frac{v}{2\pi\nu},
+\end{equation*}
+\begin{equation*}
+    \frac{1}{2}m_ev^2\approx\frac{3}{2}kT,
+\end{equation*}
+\begin{equation*}
+    b_\text{max}\approx\frac{\sqrt{\frac{3kT}{m_e}}}{2\pi\nu}\approx1\times10^{-4}\text{m}.
+\end{equation*}
+\begin{equation*}
+    n_e\approx\frac{kT}{4\pi e^2\lambda_\text{D}^2}\approx4\times10^{15}\text{m}^{-3}.
+\end{equation*}
+
+\begin{equation*}
+    T\approx10^{4}\text{K},
+\end{equation*}
+\begin{equation*}
+    \nu=100\text{MHz}=0.1\text{GHz},
+\end{equation*}
+\begin{equation*}
+    \text{EM}
+    =\int^{r_\oplus}_{R_\odot} \left[{N_e}_\oplus\left(\frac{r_\oplus}{r}\right)^2\right]^2\d r
+    =\left[-\frac{1}{3}{N_e}_\oplus^2 r_\oplus^4r^{-3}\right]^{r_\oplus}_{R_\odot}
+    \approx\frac{{N_e}_\oplus^2 r_\oplus^4}{R_\odot^3}
+    \approx5000\text{pc}/\text{cm}^6,
+\end{equation*}
+\begin{equation*}
+    \tau_\nu\approx3.28\times10^7
+    \left(\frac{T}{10^4\text{K}}\right)^{-1.35}
+    \left(\frac{\nu}{\text{GHz}}\right)^{-2.1}
+    \left(\frac{\text{EM}}{\text{pc}/\text{cm}^6}\right)
+    \approx2\times10^{13}.
+\end{equation*}
+
+\begin{equation*}
+    \frac{\d}{\d t}(\gamma m_e\vec{v})=-\frac{e}{c}(\vec{v}\times\vec{B}),
+\end{equation*}
+\begin{equation*}
+    \frac{\d}{\d t}\gamma=0,
+\end{equation*}
+\begin{equation*}
+    \frac{\d}{\d t}\vec{v}=-\frac{e}{\gamma m_ec}(\vec{v}\times\vec{B}),
+\end{equation*}
+\begin{equation*}
+    \omega^2r=\frac{e}{\gamma m_ec}vB=\frac{e}{\gamma m_ec}\omega rB,
+\end{equation*}
+\begin{equation*}
+    \omega=\frac{eB}{\gamma m_ec}=\frac{\omega_\text{G}}{\gamma},
+\end{equation*}
+
+\begin{equation*}
+    \sin\alpha\approx 1,
+\end{equation*}
+\begin{equation*}
+    \nu_\text{c}
+    =\frac{3}{2}\gamma^2\nu_\text{G}\sin\alpha
+    =\frac{3}{2}\gamma^2\frac{eB}{2\pi m_ec},
+\end{equation*}
+\begin{equation*}
+    \gamma^2=\frac{4\pi m_ec\nu_\text{c}}{3eB},
+\end{equation*}
+\begin{equation*}
+    E=\gamma m_ec^2,
+\end{equation*}
+\begin{equation*}
+    P=\frac{2e^2}{3c^3}\gamma^2\frac{e^2B^2}{m_e^2c^2}v^2\sin^2\alpha
+    =\frac{2e^2}{3c^3}\gamma^2\frac{e^2B^2}{m_e^2}\left(1-\frac{1}{\gamma^2}\right)
+    \approx\frac{2e^2}{3c^3}\gamma^2\frac{e^2B^2}{m_e^2},
+\end{equation*}
+\begin{equation*}
+    \tau\approx\frac{E}{p}\approx\frac{3m_e^3c^5}{2\gamma e^4B^2}\approx9\times10^7\text{yr}.
+\end{equation*}
+
+\end{document}
